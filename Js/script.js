@@ -196,3 +196,14 @@ if (contactForm) {
         });
     });
 }
+
+const fichierInput = document.getElementById('fichier');
+const fileNom = document.getElementById('fileNom');
+
+if (fichierInput) {
+    fichierInput.addEventListener('change', () => {
+        fileNom.textContent = fichierInput.files[0] 
+            ? fichierInput.files[0].name 
+            : 'Choisir un fichier (PDF, JPG, DWG, DXF)';
+    });
+}
