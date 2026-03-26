@@ -1,278 +1,319 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galerie de réalisations DigitAlu - Menuiserie aluminium, conception et chantiers BTP">
-    <title>Galerie - DigitAlu</title>
+    <meta name="description"
+        content="Galerie de réalisations KLDigiTech - Menuiserie aluminium, conception et chantiers BTP">
+    <title>Galerie - KLDigiTech</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../Js/script.js" defer></script>
 </head>
+
 <body>
-<header class="navbar" id="navbar">
-    <div class="navbar-inner">
-        <a href="../index.html" class="navbar-logo">
-            <img src="../LOGO/logo-digitalu.png" alt="DigitAlu">
-            <span class="navbar-logo-text">DigitAlu</span>
-        </a>
-        <nav class="navbar-nav">
-            <a href="../index.html" class="nav-link">Accueil</a>
-            <a href="a-propos.html" class="nav-link">À Propos</a>
-            <a href="galerie.html" class="nav-link active">Galerie</a>
-            <a href="projets.html" class="nav-link">Projets</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-        <div class="navbar-right">
-            <a href="contact.html" class="navbar-cta">
-                <span>Parlons de votre projet</span>
-                <i class="fas fa-arrow-right"></i>
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../LOGO/logo-miniature.webp" alt="KLDigiTech">
+                <span class="navbar-logo-text">KLDigiTech</span>
             </a>
-            <button class="navbar-burger" id="navBurger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+            <nav class="navbar-nav">
+                <a href="../index.html" class="nav-link">Accueil</a>
+                <a href="a-propos.html" class="nav-link">À Propos</a>
+                <a href="galerie.html" class="nav-link active">Galerie</a>
+                <a href="projets.html" class="nav-link">Projets</a>
+                <a href="menuistech.html" class="nav-link">MenuisTech</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="navbar-right">
+                <a href="contact.html" class="navbar-cta">
+                    <span>Parlons de votre projet</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="navbar-burger" id="navBurger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="navbar-mobile" id="navMobile">
+            <a href="../index.html" class="nav-link-mobile">Accueil</a>
+            <a href="a-propos.html" class="nav-link-mobile">À Propos</a>
+            <a href="galerie.html" class="nav-link-mobile active">Galerie</a>
+            <a href="projets.html" class="nav-link-mobile">Projets</a>
+            <a href="menuistech.html" class="nav-link-mobile active">MenuisTech</a>
+            <a href="contact.html" class="nav-link-mobile">Contact</a>
+            <a href="contact.html" class="navbar-cta-mobile">Parlons de votre projet →</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="galerie-page">
+            <div class="galerie-header">
+                <h1>Mes Réalisations</h1>
+                <p>De la conception sur AutoCAD à la finition sur chantier — 20 ans d'expertise menuiserie aluminium au
+                    service de projets exigeants.</p>
+                <span style="color: var(--accent); font-size: 0.85rem;">Un aperçu de mes réalisations — les projets
+                    présentés ici ne représentent qu'une partie de mon expérience terrain.</span></p>
+            </div>
+
+            <div class="galerie-filtres">
+                <button class="filtre-btn actif" data-filtre="tous">Tout voir</button>
+                <button class="filtre-btn" data-filtre="conception">Conceptions Diverses</button>
+                <button class="filtre-btn" data-filtre="Mauguio">Chantier Mauguio</button>
+                <button class="filtre-btn" data-filtre="Clermont L’Hérault">Chantier Clermont L’Hérault</button>
+                <button class="filtre-btn" data-filtre="Frontignan">Chantier Frontignan</button>
+                <button class="filtre-btn" data-filtre="Béziers">Chantier Béziers</button>
+            </div>
+
+            <div class="galerie-grid" id="galerieGrid">
+
+                <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique"
+                    data-tag="Conception AutoCAD">
+                    <img src="../Galerie/CHANTIER/AUTOCAD/Coupe-Horizontale.png"
+                        alt="Plan technique Coupe Horizontale menuiserie aluminium" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Coupe Horizontale OF</p>
+                        <span class="galerie-overlay-tag">Conception AutoCAD</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique"
+                    data-tag="Conception AutoCAD">
+                    <img src="../Galerie/CHANTIER/AUTOCAD/elevation.png"
+                        alt="Plan technique Elevation menuiserie aluminium" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Elevation Ensemble Composé</p>
+                        <span class="galerie-overlay-tag">Conception AutoCAD</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique"
+                    data-tag="Conception AutoCAD">
+                    <img src="../Galerie/CHANTIER/AUTOCAD/coupe-verticale.png"
+                        alt="Plan technique Coupe verticale menuiserie aluminium" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Coupe verticale OF sur Allège</p>
+                        <span class="galerie-overlay-tag">Conception AutoCAD</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio"
+                    data-tag="Chantier Mauguior">
+                    <img src="../Galerie/CHANTIER/Mauguio/Equation 1.webp" alt="Façade immeuble" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Aluminium</p>
+                        <span class="galerie-overlay-tag">Chantier Mauguio</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio"
+                    data-tag="Chantier Mauguio">
+                    <img src="../Galerie/CHANTIER/Mauguio/equation 2.webp" alt="Façade immeuble" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Aluminium</p>
+                        <span class="galerie-overlay-tag">Chantier Mauguio</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio"
+                    data-tag="Chantier Mauguio">
+                    <img src="../Galerie/CHANTIER/Mauguio/equation 3.webp" alt="Façade immeuble" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Aluminium</p>
+                        <span class="galerie-overlay-tag">Chantier Mauguio</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio"
+                    data-tag="Chantier Mauguio">
+                    <img src="../Galerie/CHANTIER/Mauguio/equation 4.webp" alt="Façade immeuble" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Aluminium</p>
+                        <span class="galerie-overlay-tag">Chantier Mauguio</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault"
+                    data-tag="Chantier Clermont L’Hérault">
+                    <img src="../Galerie/CHANTIER/Clermont/pose-mr-suspendu (1).webp"
+                        alt="Pose Structure Mur Rideau Suspendu" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Vitrée</p>
+                        <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault"
+                    data-tag="Chantier Clermont L’Hérault">
+                    <img src="../Galerie/CHANTIER/Clermont/mr-suspendu-fini (1).webp" alt="Mur Rideau Suspendu Fini"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Vitrée</p>
+                        <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault"
+                    data-tag="Chantier Clermont L’Hérault">
+                    <img src="../Galerie/CHANTIER/Clermont//struct-passerelle.webp"
+                        alt="Pose Structure Mur Rideau Suspendu Passerelle" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Vitrée</p>
+                        <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault"
+                    data-tag="Chantier Clermont L’Hérault">
+                    <img src="../Galerie/CHANTIER/Clermont/pas-fini.webp" alt="Mur Rideau Suspendu Passerelle fini"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Façade Vitrée</p>
+                        <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/pose-mr-trap.webp" alt="Pose Mur Rideau Trapèze"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/pose-mr-droit.webp" alt="Pose Mur Rideau Droit"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/vi-trap.webp"
+                        alt="pose vitrage en cours Mur rideau trapèze" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/vi-droit.webp" alt="pose vitrage en cours Mur rideau droit"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/trap-fini.webp"
+                        alt="mur rideau trapèze fini avec rajout de brise soleil" loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan"
+                    data-tag="Chantier Frontignan">
+                    <img src="../Galerie/CHANTIER/Frontignan/droit-fini.webp" alt="Mur rideau droit fini"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Mur rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Frontignan</span>
+                    </div>
+                </div>
+
+                <div class="galerie-item" data-categorie="Béziers" data-titre="Chantier Béziers"
+                    data-tag="Chantier Béziers">
+                    <img src="../Galerie/CHANTIER/Beziers/facadenon.webp" alt="Façade commerciale aluminium"
+                        loading="lazy">
+                    <div class="galerie-overlay">
+                        <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
+                        <p class="galerie-overlay-titre">Commerce Mur Rideau</p>
+                        <span class="galerie-overlay-tag">Chantier Béziers</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="galerie-vide" id="galerieVide">Aucune réalisation dans cette catégorie pour l'instant.</div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-inner">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-info">
+                <p class="lightbox-titre" id="lightboxTitre"></p>
+                <p class="lightbox-tag" id="lightboxTag"></p>
+                <p class="lightbox-compteur" id="lightboxCompteur"></p>
+            </div>
         </div>
     </div>
-    <div class="navbar-mobile" id="navMobile">
-        <a href="../index.html" class="nav-link-mobile">Accueil</a>
-        <a href="a-propos.html" class="nav-link-mobile">À Propos</a>
-        <a href="galerie.html" class="nav-link-mobile active">Galerie</a>
-        <a href="projets.html" class="nav-link-mobile">Projets</a>
-        <a href="contact.html" class="nav-link-mobile">Contact</a>
-        <a href="contact.html" class="navbar-cta-mobile">Parlons de votre projet →</a>
-    </div>
-</header>
 
-<main>
-    <section class="galerie-page">
-        <div class="galerie-header">
-            <h1>Mes Réalisations</h1>
-            <p>De la conception sur AutoCAD à la finition sur chantier — 20 ans d'expertise menuiserie aluminium au service de projets exigeants.</p>
-            <span style="color: var(--accent); font-size: 0.85rem;">Un aperçu de mes réalisations — les projets présentés ici ne représentent qu'une partie de mon expérience terrain.</span></p>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="../LOGO/Logo-societe.webp" alt="Logo KLDigiTech">
+                <p>Le numérique et la digitalisation par un homme de terrain.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À Propos</a></li>
+                    <li><a href="galerie.html" class="active">Galerie</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="menuistech.html">MenuisTech</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h3>Informations légales</h3>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgu.html">CGU</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div class="galerie-filtres">
-            <button class="filtre-btn actif" data-filtre="tous">Tout voir</button>
-            <button class="filtre-btn" data-filtre="conception">Conceptions Diverses</button>
-            <button class="filtre-btn" data-filtre="Mauguio">Chantier Mauguio</button>
-            <button class="filtre-btn" data-filtre="Clermont L’Hérault">Chantier Clermont L’Hérault</button>
-            <button class="filtre-btn" data-filtre="Frontignan">Chantier Frontignan</button>
-            <button class="filtre-btn" data-filtre="Béziers">Chantier Béziers</button>
+        <div class="footer-bottom">
+            <p>© 2026 KLDigiTech - Tous droits réservés</p>
         </div>
-
-        <div class="galerie-grid" id="galerieGrid">
-
-            <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique" data-tag="Conception AutoCAD">
-                <img src="../Galerie/CHANTIER/AUTOCAD/Coupe-Horizontale.png" alt="Plan technique Coupe Horizontale menuiserie aluminium" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Coupe Horizontale OF</p>
-                    <span class="galerie-overlay-tag">Conception AutoCAD</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique" data-tag="Conception AutoCAD">
-                <img src="../Galerie/CHANTIER/AUTOCAD/elevation.png" alt="Plan technique Elevation menuiserie aluminium" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Elevation Ensemble Composé</p>
-                    <span class="galerie-overlay-tag">Conception AutoCAD</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="conception" data-titre="Coupe technique" data-tag="Conception AutoCAD">
-                <img src="../Galerie/CHANTIER/AUTOCAD/coupe-verticale.png" alt="Plan technique Coupe verticale menuiserie aluminium" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Coupe verticale OF sur Allège</p>
-                    <span class="galerie-overlay-tag">Conception AutoCAD</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio" data-tag="Chantier Mauguior">
-                <img src="../Galerie/CHANTIER/Mauguio/Equation 1.webp" alt="Façade immeuble" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Aluminium</p>
-                    <span class="galerie-overlay-tag">Chantier Mauguio</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio" data-tag="Chantier Mauguio">
-                <img src="../Galerie/CHANTIER/Mauguio/equation 2.webp" alt="Façade immeuble" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Aluminium</p>
-                    <span class="galerie-overlay-tag">Chantier Mauguio</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio" data-tag="Chantier Mauguio">
-                <img src="../Galerie/CHANTIER/Mauguio/equation 3.webp" alt="Façade immeuble" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Aluminium</p>
-                    <span class="galerie-overlay-tag">Chantier Mauguio</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Mauguio" data-titre="Chantier Mauguio" data-tag="Chantier Mauguio">
-                <img src="../Galerie/CHANTIER/Mauguio/equation 4.webp" alt="Façade immeuble" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Aluminium</p>
-                    <span class="galerie-overlay-tag">Chantier Mauguio</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault" data-tag="Chantier Clermont L’Hérault">
-                <img src="../Galerie/CHANTIER/Clermont/pose-mr-suspendu (1).webp" alt="Pose Structure Mur Rideau Suspendu" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Vitrée</p>
-                    <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault" data-tag="Chantier Clermont L’Hérault">
-                <img src="../Galerie/CHANTIER/Clermont/mr-suspendu-fini (1).webp" alt="Mur Rideau Suspendu Fini" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Vitrée</p>
-                    <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault" data-tag="Chantier Clermont L’Hérault">
-                <img src="../Galerie/CHANTIER/Clermont//struct-passerelle.webp" alt="Pose Structure Mur Rideau Suspendu Passerelle" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Vitrée</p>
-                    <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Clermont L’Hérault" data-titre="Chantier Clermont L’Hérault" data-tag="Chantier Clermont L’Hérault">
-                <img src="../Galerie/CHANTIER/Clermont/pas-fini.webp" alt="Mur Rideau Suspendu Passerelle fini" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Façade Vitrée</p>
-                    <span class="galerie-overlay-tag">Chantier Clermont L’Hérault</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/pose-mr-trap.webp" alt="Pose Mur Rideau Trapèze" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/pose-mr-droit.webp" alt="Pose Mur Rideau Droit" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/vi-trap.webp" alt="pose vitrage en cours Mur rideau trapèze" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/vi-droit.webp" alt="pose vitrage en cours Mur rideau droit" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/trap-fini.webp" alt="mur rideau trapèze fini avec rajout de brise soleil" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Frontignan" data-titre="Chantier Frontignan" data-tag="Chantier Frontignan">
-                <img src="../Galerie/CHANTIER/Frontignan/droit-fini.webp" alt="Mur rideau droit fini" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Mur rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Frontignan</span>
-                </div>
-            </div>
-
-            <div class="galerie-item" data-categorie="Béziers" data-titre="Chantier Béziers" data-tag="Chantier Béziers">
-                <img src="../Galerie/CHANTIER/Beziers/facadenon.webp" alt="Façade commerciale aluminium" loading="lazy">
-                <div class="galerie-overlay">
-                    <div class="galerie-overlay-icon"><i class="fas fa-search-plus"></i></div>
-                    <p class="galerie-overlay-titre">Commerce Mur Rideau</p>
-                    <span class="galerie-overlay-tag">Chantier Béziers</span>
-                </div>
-              </div>
-
-        </div>
-        <div class="galerie-vide" id="galerieVide">Aucune réalisation dans cette catégorie pour l'instant.</div>
-    </section>
-</main>
-
-<div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
-    <div class="lightbox-inner">
-        <img class="lightbox-img" id="lightboxImg" src="" alt="">
-        <div class="lightbox-info">
-            <p class="lightbox-titre" id="lightboxTitre"></p>
-            <p class="lightbox-tag" id="lightboxTag"></p>
-            <p class="lightbox-compteur" id="lightboxCompteur"></p>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="footer-grid">
-        <div class="footer-brand">
-            <img src="../LOGO/logo-digitalu.png" alt="Logo DigitAlu">
-            <p>Le numérique et la digitalisation par un homme de terrain.</p>
-        </div>
-        <div class="footer-links">
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="a-propos.html">À Propos</a></li>
-                <li><a href="galerie.html" class="active">Galerie</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-legal">
-            <h3>Informations légales</h3>
-            <ul>
-                <li><a href="mentions-legales.html">Mentions légales</a></li>
-                <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
-                <li><a href="cgu.html">CGU</a></li>
-                <li><a href="cookies.html">Cookies</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2026 DigitAlu - Tous droits réservés</p>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
