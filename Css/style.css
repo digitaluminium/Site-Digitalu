@@ -594,8 +594,8 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ===== MENUISTECH ===== */
-.menuistech {
+/* ===== BuildKL ===== */
+.BuildKL {
 
     display: flex;
     flex-direction: column;
@@ -605,7 +605,7 @@ footer {
     padding: 120px 40px 80px;
 }
 
-.menuistech-hero {
+.BuildKL-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -613,12 +613,12 @@ footer {
     margin-bottom: 40px;
 }
 
-.menuistech-hero h1 {
+.BuildKL-hero h1 {
     color: var(--text-primary);
     font-size: 4rem;
 }
 
-.menuistech-badge {
+.BuildKL-badge {
     font-family: 'Oswald', sans-serif;
     font-size: 0.9rem;
     letter-spacing: 4px;
@@ -631,7 +631,7 @@ footer {
     border-radius: 20px;
 }
 
-.menuistech-problemes {
+.BuildKL-problemes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,7 +640,7 @@ footer {
     max-width: 1200px;
 }
 
-.menuistech-problemes h2 {
+.BuildKL-problemes h2 {
     margin-bottom: 40px;
     font-size: 3rem;
     color: var(--text-primary);
@@ -682,7 +682,7 @@ footer {
     line-height: 1.6;
 }
 
-.menuistech-solution {
+.BuildKL-solution {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -717,18 +717,18 @@ footer {
 
 }
 
-.menuistech-solution h2 {
+.BuildKL-solution h2 {
     font-size: 3rem;
     margin-bottom: 40px;
     color: var(--text-primary);
 }
 
-.menuistech-solution span {
+.BuildKL-solution span {
     font-size: 3rem;
     min-width: 40px;
 }
 
-.menuistech-teaser {
+.BuildKL-teaser {
     border: 1px solid rgba(56, 189, 248, 0.3);
     padding: 40px 20px;
     border-radius: 15px;
@@ -741,13 +741,13 @@ footer {
     font-family: 'Oswald', sans-serif
 }
 
-.menuistech-teaser h2 {
+.BuildKL-teaser h2 {
     color: var(--text-primary);
     font-size: 3rem;
     text-align: center;
 }
 
-.menuistech-teaser p {
+.BuildKL-teaser p {
     text-align: center;
     font-size: 1.5rem;
 }
